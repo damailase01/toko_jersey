@@ -1,0 +1,42 @@
+Panduan Menjalankan Proyek Laravel
+
+1. Ekstrak File Proyek
+   - Ekstrak file proyek Laravel yang telah saya kirimkan.
+
+2. Persiapkan Lingkungan, pastikan di laptop sudah terinstal:
+     - PHP (minimal versi 8.0)
+     - Composer
+     - MySQL
+   Jika belum, unduh dan instal:
+     - PHP: (https://www.php.net/)
+     - Composer: (https://getcomposer.org/)
+
+3. Konfigurasi File `.env`
+   - File `.env` sudah saya siapkan. Pastikan informasi database di laptop sesuai:
+     ```
+	DB_CONNECTION=mysql
+	DB_HOST=
+	DB_PORT=
+	DB_DATABASE=toko_jersey
+	DB_USERNAME= 
+	DB_PASSWORD=
+     ```
+
+4. cari file 'toko_jersey.sql' lalu import ke phpMyAdmin dengan nama database toko_jersey (sesuai di .env)
+
+4. Jalankan Composer
+   - Buka terminal di folder proyek Laravel.
+   - Jalankan perintah:  
+     ```
+     composer install
+     ```
+
+5. Jalankan Server Laravel
+   - Masih di terminal, ketik perintah berikut untuk menjalankan server Laravel:
+     ```
+     php artisan serve
+     ```
+   - Akses aplikasi di browser dengan alamat:
+     ```
+     http://127.0.0.1:8000
+     ```

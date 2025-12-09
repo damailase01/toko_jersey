@@ -1,0 +1,166 @@
+/* purchase-details.css */
+.purchase-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 130px 20px;
+}
+
+.purchase-wrapper {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+}
+
+/* Order Summary Styles */
+.order-summary {
+    margin-bottom: 32px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 24px;
+}
+
+.product-card {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin: 16px 0;
+}
+
+.product-thumb {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.product-info h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.variant {
+    color: #666;
+    font-size: 14px;
+}
+
+.price-info {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-breakdown {
+    margin-top: 24px;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.price-row.total {
+    font-weight: bold;
+    font-size: 18px;
+    border-top: 1px solid #eee;
+    padding-top: 12px;
+}
+
+/* Shipping Information Styles */
+.shipping-info {
+    margin-bottom: 32px;
+}
+
+.address-details, .shipping-method {
+    background: #f8f9fa;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 16px 0;
+}
+
+.recipient {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.courier-option {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.courier-option.active {
+    border-color: #007bff;
+    background: #f0f7ff;
+}
+
+/* Payment Method Styles */
+.bank-account {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 16px 0;
+}
+
+.bank-account.active {
+    border-color: #007bff;
+    background: #f0f7ff;
+}
+
+.bank-logo {
+    width: 60px;
+    height: auto;
+}
+
+.account-info p {
+    margin: 4px 0;
+}
+
+.account-number {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+    justify-content: flex-end;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background: #007bff;
+    color: white;
+}
+
+.btn-secondary {
+    background: #f8f9fa;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+h3 {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 12px;
+}

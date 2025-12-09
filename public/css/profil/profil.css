@@ -1,0 +1,281 @@
+/* Profile Page Styles */
+.profile-page {
+    padding: 130px 0;
+    background: #f5f5f5;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    gap: 20px;
+}
+
+/* Sidebar Styles */
+.profile-sidebar {
+    width: 250px;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    height: fit-content;
+}
+
+.user-brief {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.user-avatar {
+    position: relative;
+}
+
+.user-avatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.edit-avatar {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #ee4d2d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.username {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.user-status {
+    font-size: 14px;
+    color: #757575;
+}
+
+.sidebar-menu {
+    margin-top: 20px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    color: #212121;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.menu-item:hover {
+    background: #fff2ee;
+    color: #ee4d2d;
+}
+
+.menu-item.active {
+    color: #ee4d2d;
+    background: #fff2ee;
+}
+
+/* Main Content Styles */
+.profile-content {
+    flex: 1;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.content-header {
+    margin-bottom: 30px;
+}
+
+.content-header h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.content-header p {
+    margin: 0;
+    color: #757575;
+}
+
+/* Form Styles */
+.profile-form {
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #212121;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-control:focus {
+    border-color: #ee4d2d;
+    outline: none;
+}
+
+.verified-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.verified-badge {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.date-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+.date-inputs select {
+    flex: 1;
+}
+
+.btn-save {
+    background: #ee4d2d;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.btn-save:hover {
+    background: #d73211;
+}
+
+/* Additional Info Styles */
+.additional-info {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.info-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.info-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.info-header i {
+    color: #ee4d2d;
+}
+
+.info-header h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.verified {
+    color: #2e7d32;
+}
+
+.member-status {
+    display: flex;
+    gap: 15px;
+}
+
+.member-details h4 {
+    margin: 0 0 5px;
+}
+
+.member-details p {
+    margin: 0 0 10px;
+    font-size: 14px;
+    color: #757575;
+}
+
+.progress-bar {
+    background: #f5f5f5;
+    height: 6px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress {
+    background: #ee4d2d;
+    height: 100%;
+    border-radius: 3px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .profile-sidebar {
+        width: 100%;
+    }
+
+    .additional-info {
+        grid-template-columns: 1fr;
+    }
+
+    .date-inputs {
+        flex-direction: column;
+    }
+}

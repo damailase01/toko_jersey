@@ -1,0 +1,133 @@
+/* public/css/admin/product-detail.css */
+
+.product-detail {
+    margin-left: 280px;
+    padding: 30px;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.product-header {
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 1rem;
+}
+
+.product-header h1 {
+    font-size: 1.75rem;
+    color: #333;
+    margin: 0;
+}
+
+.product-name {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.info-item {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.info-item.full-width {
+    grid-column: 1 / -1;
+}
+
+.label {
+    display: block;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.value {
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
+
+.features-section,
+.product-images {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.features-section h3,
+.product-images h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.features-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.features-list li:last-child {
+    border-bottom: none;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.image-item {
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.no-data {
+    color: #666;
+    font-style: italic;
+    padding: 1rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .product-detail {
+        padding: 1rem;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .image-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}

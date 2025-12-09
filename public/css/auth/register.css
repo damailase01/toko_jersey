@@ -1,0 +1,295 @@
+/* register-style.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #ee4d2d 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.register-container {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    flex: 1;
+    padding: 50px;
+}
+
+.image-container {
+    flex: 1;
+    background: url('../../images/tes4.jpg') center/cover;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px 15px 15px 45px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #ee4d2d;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+.terms {
+    margin-bottom: 20px;
+}
+
+.terms label {
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.terms a {
+    color: #ee4d2d;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #ee4d2d;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #357ABD;
+}
+
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background: #ddd;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+.divider span {
+    background: white;
+    padding: 0 10px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.social-register {
+    margin-bottom: 20px;
+}
+
+/* register-style.css (lanjutan) */
+.google-btn {
+    background: white;
+    color: #666;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.google-btn:hover {
+    background: #f5f5f5;
+}
+
+.login-link {
+    text-align: center;
+    color: #666;
+}
+
+.login-link a {
+    color: #ee4d2d;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        display: none;
+    }
+    
+    .form-container {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .subtitle {
+        font-size: 0.9em;
+    }
+
+    .input-group input {
+        padding: 12px 12px 12px 40px;
+    }
+
+    button {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .terms label {
+        font-size: 0.9em;
+    }
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.register-container {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Hover Effects */
+.input-group input:hover {
+    border-color: #ee4d2d;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.terms a:hover,
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Focus States */
+input:focus {
+    border-color: #ee4d2d;
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+/* Custom Checkbox Style */
+.terms input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    accent-color: #ee4d2d;
+}
+
+/* Error States */
+.input-group input:invalid:focus {
+    border-color: #ff4d4d;
+    box-shadow: 0 0 0 2px rgba(255, 77, 77, 0.2);
+}
+
+/* Success States */
+.input-group input:valid:not(:placeholder-shown) {
+    border-color: #4CAF50;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.error-messages {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 15px;
+}

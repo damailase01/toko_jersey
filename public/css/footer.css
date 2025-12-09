@@ -1,0 +1,208 @@
+/* footer.css */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 60px 0 20px;
+    margin-top: 80px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Brand Section */
+.footer-brand {
+    max-width: 400px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+.footer-logo span {
+    color: var(--accent-color);
+}
+
+.brand-description {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: var(--white);
+    background: rgba(255, 255, 255, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    background: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+/* Quick Links Sections */
+.footer-links h4,
+.footer-contact h4 {
+    color: var(--white);
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer-links ul,
+.footer-contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 14px;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+    transform: translateX(5px);
+}
+
+/* Contact Section */
+.footer-contact ul li {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-contact i {
+    color: var(--accent-color);
+}
+
+.payment-methods {
+    margin-top: 20px;
+}
+
+.payment-img {
+    max-width: 200px;
+    opacity: 0.7;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.bottom-links {
+    display: flex;
+    gap: 20px;
+}
+
+.bottom-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.bottom-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        padding: 40px 0 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-links ul,
+    .footer-contact ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .payment-methods {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Hover Animations */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.social-links a:hover {
+    animation: float 1s ease infinite;
+}
+
+.footer-links a:hover {
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+}
